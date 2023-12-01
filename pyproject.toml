@@ -1,0 +1,43 @@
+[tool.ruff]
+select = ["ALL"]
+
+
+ignore = [
+"S301", # Use of insecure MD2, MD4, MD5, or SHA1 hash function
+"D203", # one-blank-line-before-class` 
+"D213", # multi-line-summary-second-line
+"FBT001", # Boolean-typed positional argument in function definition
+"FBT002", # Boolean default positional argument in function definition
+"ANN101", # Missing type annotation for self in method
+"INP001", # implicit namespace packages not allowed
+]
+
+# Show potential fixes
+show-fixes = true
+
+# Compatible for which version
+target-version = "py38"
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+per-file-ignores = {}
